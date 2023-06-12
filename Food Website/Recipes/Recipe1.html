@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Recipe 1</title>
+		<link rel="icon"  href ="../images/icon.png"  type="image/icon" >
+		<!-- font awesome cdn link  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<!-- custom css file link  -->
+		<link rel="stylesheet" href="recipe.css">
+		<script type="text/javascript" src="../java.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+	
+		<header>
+			<a href="../index.html" class="logo"><img src="../images/logo.png" height="100px"/></a>
+
+			<div id="menu-bar" class="fas fa-bars"></div>
+
+			<nav class="navbar">
+				<a id="#homepage" href="../index.html">Homepage</a>
+				<a id="rand" onmouseover="rand()" href="">Random Recipe</a>
+				<a href="recipes.html">Recipes</a>
+				<a href="../MyKitchen/mykitchen.html">My Kitchen</a>
+				<a href="../contactus/contactus.html">Contact us</a>
+			</nav>
+		</header>
+<div class="scrolldown">
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../images/top.png" /></button>
+
+		<section class="speciality" id="speciality">
+		
+		<h1 class="heading"><span>Lemon and Passionfruit Drizzle Loaf</span> </h1>
+		<button class="heading2"><a href="#ingred"><span>Ingredients</span></a> </button>
+		<button class="heading2"><a href="#method"><span>Method</span> </a></button>
+		<button class="heading2" ><a href="#fact"><span> Facts</span> </a></button>
+		<br>
+		<div class="box1">
+			<img class="image" src="../images/1.jpeg"  alt="">
+		</div>
+		<div class="box-container2">
+		<div class="popup" id="box2">
+			<div class="modal">
+			  <header class="close"> 
+				<h2>Nutrition calculator</h2>
+				<span  onclick="document.getElementById('box2').style.display = 'none'">&times;</span>
+			  </header>
+			  <div class="contentbox2">
+				  <p>This calculator uses a standard BMR equation (the Mifflin-St Jeor formula) to estimate your Calorie needs.<br>
+					<p>We also make some rough macronutrient suggestions</p>
+					<p><b>Keep in mind that this is a general estimate. For best results, consult your healthcare provider.</b></p>
+				<p ><a href="calc.html" style="color:orange;">Let's see how many calories you should take!</a></p><br>
+			</div>
+		  </div>
+		</div>
+		</div>
+		<div class="box-container">
+			<div class="box">
+				<div class="content" id="ingred"><h3>Ingredients</h3>
+					<div class="Recipe-IngredientList">
+						 <div id="port">
+							<label for="serving">Portions :</label>
+							<input type="number" id="servingInput" placeholder="Enter portion">
+							<button class="js-decreaseService">-</button>
+							<button class="js-increaseService">+</button>
+							<label for="calc">Not sure ?</label>
+							<button><img src="../images/Calculator.png" title="Click to calculate your calories itake" alt="" onclick="document.getElementById('box2').style.display='block'"/></button>
+							<div id="search">
+							<button >Calculate</button>
+						</div>
+					</div></br>
+                <div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="1.5">Buckwheat Flour: <span> </span>cup(s)</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">Cocunt Flour: <span> </span>tbsp</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="30">Almond Meal: <span> </span>g</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="110">Coconut Sugar: <span> </span>g</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">Gluten-Free Baking Powder: <span> </span>tsp</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="0.5">Bicarbonate of Soda: <span> </span>tsp</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="25">Shredded Cocount: <span> </span>g</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="270">Coconut Light Milk : <span> </span>ml</div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">Eggs: <span></span> </div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">Lemons (rind finely grated & juiced): <span></span> </div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="4">Passionfruit: <span> </span> </div>
+				<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="1">Water: <span> </span>tbsp</div><br>
+				<div class="Recipe-Ingredient js-recipeIngredient" id="Sum" data-baseValue="215">Total Calories: <span></span></div>
+			</div>
+		</div>
+				<div class="box">
+					<div class="content" id="method"><h3>Method</h3>
+						<ul>
+							<li>Preheat oven to 180°C/160°C fan forced. Grease base and sides of a 9.5 x 19.5cm (base measurement) loaf pan and line with baking paper, allowing the edges to overhang.</li>
+							<li>Combine the flours, almond meal, sugar, baking powder, bicarb and 1/4 cup shredded coconut in a bowl. Make a well in centre. </li>
+							<li>Whisk the milk, oil, eggs, rind and juice from 1 lemon and pulp from 1 1/2 passionfruit in a jug. Add to well. Stir until combined. Spoon into prepared pan. Smooth the surface. Sprinkle with remaining shredded coconut. Bake for 45 minutes or until a skewer inserted in the centre comes out clean. Using a skewer, poke holes all over the hot loaf.</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<div class="content" id="fact">
+					<h3>Nutritional Information</h3><br>
+					<p id="serve">Per Serving</p>
+					<div class ="box-container">
+					<div class="box">
+					<p>CALORIES<br>215 kJ</p>
+					</div>
+					<div class="box" id="energy">
+					<p>ENERGY <br>899 kJ</p>
+					</div>
+					<div class="box">
+					<p>FAT<br> 11g</p>
+					</div>
+					<div class="box">
+					<p>SATURATES<br>8g </p>
+					</div>
+					<div class="box">
+					<p>FIBRE<br>2g</p>
+					</div>
+					<div class="box">
+					<p>PROTEIN<br>3g</p>
+					</div>
+					<div class="box">
+					<p>CARBS<br> 27g</p>
+					</div>
+				</div>		
+				</div>
+
+
+			</div>
+		</section>
+
+<script>
+var computeServing = function(serving) {
+  $('.js-recipeIngredient').each(function(index, item) {
+    $(item).children('span').html($(item)[0].dataset.basevalue * serving)
+  })
+}
+$('#servingInput').on('change', function() {
+  computeServing($(this).val())
+})
+$('.js-decreaseService').on('click', function() {
+  var currentServing = $('#servingInput').val()
+  $('#servingInput').val(currentServing - 1)
+  computeServing(currentServing - 1)
+})
+$('.js-increaseService').on('click', function() {
+  var currentServing = $('#servingInput').val()
+  $('#servingInput').val(parseInt(currentServing) + 1)
+  computeServing(parseInt(currentServing) + 1)
+})
+computeServing(5)
+</script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	</body>
+	<script src="java.js"></script>
+
+</html>

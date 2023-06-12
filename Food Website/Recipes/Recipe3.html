@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Recipe 3</title>
+		<link rel="icon"  href ="../images/icon.png"  type="image/icon" >
+		<!-- font awesome cdn link  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<!-- custom css file link  -->
+		<link rel="stylesheet" href="recipe.css">
+		<script type="text/javascript" src="../java.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+	
+		<header>
+			<a href="../index.html" class="logo"><img src="../images/logo.png" height="100px"/></a>
+
+			<div id="menu-bar" class="fas fa-bars"></div>
+
+			<nav class="navbar">
+				<a id="#homepage" href="../index.html">Homepage</a>
+				<a id="rand" onmouseover="rand()" href="">Random Recipe</a>
+				<a href="recipes.html">Recipes</a>
+				<a href="../MyKitchen/mykitchen.html">My Kitchen</a>
+				<a href="../contactus/contactus.html">Contact us</a>
+			</nav>
+		</header>
+<div class="scrolldown">
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../images/top.png" /></button>
+
+		<section class="speciality" id="speciality">
+		
+		<h1 class="heading"><span>Soy and vegetable pita burgers</span> </h1>
+		<button class="heading2"><a href="#ingred"><span>Ingredients</span></a> </button>
+		<button class="heading2"><a href="#method"><span>Method</span> </a></button>
+		<button class="heading2" ><a href="#fact"><span> Facts</span> </a></button>
+		<br>
+				<div class="box1">
+				<img class="image" src="../images/5.jpeg"  alt="">
+			</div>
+			<div class="box-container">
+				<div class="box">
+					<div class="content" id="ingred"><h3>Ingredients</h3>
+						<div>
+  
+  <div class="Recipe-IngredientList">
+  <div id="port">
+  <label for="serving">Portions :</label>
+  <input type="number" id="servingInput" placeholder="Enter portion">
+  <button class="js-decreaseService">-</button>
+  <button class="js-increaseService">+</button>
+  <div id="search">
+  <button >Calculate</button>
+  </div>
+  </div>
+
+    </br>
+    <div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">Olive Oil: <span> </span>tsp</div>
+    <div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="1">Ground Cumin: <span> </span>tsp</div>
+    <div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="1">Ground Coriander: <span> </span>tsp</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">Green Onions (thinly sliced): <span> </span> </div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="400">Can Soybeans (drained & rinsed): <span> </span>g</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="0.5">Small Zucchini (grated): <span> </span> </div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="0.5">Small Carrot (peeled & grated): <span> </span> </div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="1">Egg (lightly beaten): <span> </span>g</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="0.5">Dried Multigrain Breadcrumbs: <span> </span> cup(s) </div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="4">Small Wholemeal Pita Rounds (halved): <span> </span> </div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="100">Mesclun Salad Mix: <span> </span>g</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="1">Medium Tomato (thinly sliced): <span> </span> </div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="0.25">Reduced-Fat Hommus dip: <span> </span>cup(s)</div>
+
+	<br>
+	<div class="Recipe-Ingredient js-recipeIngredient" id="Sum" data-baseValue="375">Total Calories: <span></span></div>
+  </div>
+</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="content" id="method"><h3>Method</h3>
+						<ul>
+							<li>Heat 1 teaspoon oil in a non-stick frying pan over medium-high heat. Add cumin, coriander and onion. Cook, stirring, for 2 to 3 minutes or until fragrant. Remove from heat. Place beans in a bowl. Mash until almost smooth.</li>
+							<li>Add cumin mixture, zucchini, carrot, egg and breadcrumbs to beans. Stir to combine. Using 2 tablespoons mixture per ball, roll into 8 balls. Flatten slightly. Place on a plate. Cover. Refrigerate for 15 minutes, if time permits.</li>
+							<li>Heat remaining oil in a frying pan over medium-high heat. Cook patties for 3 to 4 minutes each side or until golden and cooked through.</li>
+							<li>Fill each pita half with salad, tomato and 1 patty. Top with hommus. Serve.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<div class="content" id="fact">
+					<h3>Nutritional Information</h3><br>
+					<p id="serve">Per Serving</p>
+					<div class ="box-container">
+					<div class="box">
+					<p>CALORIES<br>375 kJ</p>
+					</div>
+					<div class="box" id="energy">
+					<p>ENERGY <br>1569 kJ</p>
+					</div>
+					<div class="box">
+					<p>FAT<br> 10.1g</p>
+					</div>
+					<div class="box">
+					<p>SATURATES<br>1.7g </p>
+					</div>
+					<div class="box">
+					<p>FIBRE<br>10.6g</p>
+					</div>
+					<div class="box">
+					<p>PROTEIN<br>17g</p>
+					</div>
+					<div class="box">
+					<p>SODIUM<br>751mg</p>
+					<div class="box">
+					<p>CARBS<br>49.6g</p>
+					</div>
+				</div>		
+				</div>
+
+
+			</div>
+		</section>
+
+<script>
+var computeServing = function(serving) {
+  $('.js-recipeIngredient').each(function(index, item) {
+    $(item).children('span').html($(item)[0].dataset.basevalue * serving)
+  })
+}
+$('#servingInput').on('change', function() {
+  computeServing($(this).val())
+})
+$('.js-decreaseService').on('click', function() {
+  var currentServing = $('#servingInput').val()
+  $('#servingInput').val(currentServing - 1)
+  computeServing(currentServing - 1)
+})
+$('.js-increaseService').on('click', function() {
+  var currentServing = $('#servingInput').val()
+  $('#servingInput').val(parseInt(currentServing) + 1)
+  computeServing(parseInt(currentServing) + 1)
+})
+computeServing(5)
+</script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	</body>
+	<script src="java.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Log In</title>
+		<link rel="stylesheet" href="signup-style.css"/>
+		<script>
+			function ShowP() {
+				var x = document.getElementById("psw");
+				var y = document.getElementById("hide");
+				if (x.type === "password") {
+					x.type = "text";
+					y.src = "hide.png"
+				}	 
+				else {
+					x.type = "password";
+					y.src = "show.png"
+				}
+			}	
+		</script>
+	</head>
+	<body>
+			<div>
+				<div class="top"><a href="../index.html"><img src="../images/logo2.png" height="150px"/></a></div>
+				<div class="container">
+				<form action="/action_page.php" method="post">
+					<div class="container">
+						<h2>Log In</h2>
+						<p>Please fill in this form to Log-in your account.</p>
+						<hr>
+						<label for="email"><b>Email</b></label>
+						<input type="email" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<img src="show.png" width="18px" onclick="ShowP()" id="hide"/>
+						<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+						
+						<button type="submit">Login</button>
+						<label>
+						  <input type="checkbox" checked="checked" name="remember"> Remember me
+						</label>
+					</div>
+
+				  <div class="container" style="background-color:#f1f1f1; border-radius: 0px 0px 20px 20px">
+					<span class="psw">Forgot <a href="#">password? </a></span><br>
+					<span class="psw">Don't have an account? <a href="signup.html">Sign up</a></span>
+				  </div>
+				</form>
+				</div>
+			</div>
+	</body>
+</html>
+
