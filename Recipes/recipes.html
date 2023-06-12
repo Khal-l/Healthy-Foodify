@@ -1,0 +1,136 @@
+<!docTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="icon"  href ="../images/icon.png"  type="image/icon" >
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="recipes.css">
+	<script type="text/javascript" src="../java.js"></script>
+</head>
+<body>
+
+<header>
+
+    <a href="../index.html" class="logo"><img src="../images/logo.png" height="100px"/></a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a id="#homepage" href="../index.html">Homepage</a>
+		<a id="rand" onmouseover="rand()" href="">Random Recipe</a>
+        <a href="recipes.html">Recipes</a>
+		<a href="../MyKitchen/mykitchen.html">My Kitchen</a>
+        <a href="../contactus/contactus.html">Contact us</a>
+    </nav>
+</header>
+
+<section class="speciality" id="speciality">
+
+    <h1 class="heading"><span>Recipes</span> </h1>
+
+    <div class="box-container">
+	 <div class="popup" id="box1">
+		<div class="modal">
+		  <header class="close"> 
+			
+			<h2>Good Choice</h2>
+			<span  onclick="document.getElementById('box1').style.display = 'none'">&times;</span>
+		  </header>
+		  <div class="contentbox2">
+			<p>Would you like to watch a video how to prepare the recipe? <a id="link" style="color:green;" href="https://www.youtube.com/watch?v=9C-RuG-iVXg" target="_blank">Click Me to watch</a></p><br>
+			<p id="calc"><a  href="Recipe1.html" style="color:black;">Would rather discover and calculate some calories!</a></p><br>
+		</div>
+	  </div>
+	</div>
+	<div class="popup" id="box2">
+		<div class="modal">
+		  <header class="close"> 
+			
+			<h2>Good Choice</h2>
+			<span  onclick="document.getElementById('box2').style.display = 'none'">&times;</span>
+		  </header>
+		  <div class="contentbox2">
+			<p>Would you like to watch a video how to prepare the recipe? <a id="link" style="color:green;" href="https://www.youtube.com/watch?v=foB6bxhZYF0" target="_blank">Click Me to watch</a></p><br>
+			<p id="calc2"><a  href="Recipe2.html" style="color:black;">Would rather discover and calculate some calories!</a></p><br>
+		</div>
+	  </div>
+	</div>
+        <div class="box">
+            <img class="image" src="../images/1.jpeg" id="Lemon Loaf" title="Click for more" alt="" onclick="document.getElementById('box1').style.display='block'"/>
+	
+            <div class="content">
+                <img src="../images/bread.png"   id="loaf"  alt=""><br>
+                <h3>Lemon Loaf</h3>
+                <p>This low-cal <span class="green">gluten-free</span> loaf is perfect for mid-morning snacks, 
+				afternoon sweet cravings and everything in between.</p>
+				</div>
+
+        </div>
+	 
+        <div class="box">
+            <img class="image" src="../images/2.jpg"  title="Click for more" alt="" onclick="document.getElementById('box2').style.display='block'" alt="">
+	
+            <div class="content">
+                <img src="../images/falafel.png" id="falafel" alt=""><br>
+				<div class="text">
+				<br>
+                <h3>Falafel</h3>
+                <p>Save some time this week and make this fast falafel bowl for a <span class="green">healthy vegetarian </span>lunch or dinner.</p>
+			</div>
+			</div>
+        </div>
+	
+        <div class="box">
+			<a href="recipe3.html">
+            <img class="image" src="../images/5.jpeg" alt="">
+			</a>
+            <div class="content">
+                <img src="../images/yum.png" id="burger" alt=""><br>
+				<div class="text">
+				<br>
+                <h3>Vegtable Burger</h3>
+                <p>Meet the ultimate <span class="green">vegetarian patty.</span> Perfect for filling pita breads or burgers.</p>
+            </div>
+			</div>
+        </div>
+        <div class="box">
+			<a href="recipe4.html">
+            <img class="image" src="../images/3.jpg" alt="">
+			</a>
+            <div class="content">
+                <img src="../images/eggp.png" alt=""><br>
+                <h3>Lentil-stuffed eggplants</h3>
+                <p>These spiced-lentil stuffed eggplants make the<span class="green"> perfect vegetarian dinner</span> and will have everyone feeling very satisfied</p>
+            </div>
+        </div>
+        <div class="box">
+			<a href="recipe5.html">
+            <img class="image" src="../images/4.jpg" alt="">
+			</a>
+            <div class="content">
+                <img src="../images/salad.png" alt=""><br>
+                <br>
+				<h3>Halloumi Salad</h3>
+                <p>For a <span class="green">simple salad  </span>that is packed with flavour try this tomato, watermelon and haloumi salad with.</p>
+            </div>
+        </div>
+        <div class="box">
+			<a href="recipe6.html">
+            <img class="image" src="../images/6.jpg" alt="">
+			</a>
+            <div class="content">
+                <img src="../images/tart.png" alt=""><br>
+                <h3>Frittata tray</h3>
+                <p>A <span class="green">healthier dinner </span> is made easy with this all in one frittata tray bake, loaded with mushrooms, cherry tomatoes, and artichoke.tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+</div>
+</section>
+
+<script src="../java.js"></script>
+</body>
+</html>

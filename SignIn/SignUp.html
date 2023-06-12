@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="signup-style.css"/>
+	</head>
+	<body>
+			
+			<div>
+				<div class="top"><a href="../index.html"><img src="../images/logo2.png" height="150px"/></a></div>
+			<form action="/action_page.php">
+			  <div class="container">
+				<h2>Sign Up</h2>
+				<p>Please fill in this form to create an account.</p>
+				<hr>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				
+				<label>
+				  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				</label>
+				
+				<p>By creating an account you agree to our <a href="#" >Terms & Conditions</a>.</p>
+
+				<div class="clearfix">
+				  <button type="submit" class="signupbtn">Sign Up</button>
+				</div>
+			  </div>
+			  <div class="container" style="background-color:#f1f1f1; border-radius: 0px 0px 25px 25px">
+					<span class="psw">Already have an account? <a href="Login.html">Log in</a></span>
+				  </div>
+			</form>
+	</body>
+</html>
+

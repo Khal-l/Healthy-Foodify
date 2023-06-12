@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Recipe 6</title>
+		<link rel="icon"  href ="../images/icon.png"  type="image/icon" >
+		<!-- font awesome cdn link  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<!-- custom css file link  -->
+		<link rel="stylesheet" href="recipe.css">
+		<script type="text/javascript" src="../java.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+	
+		<header>
+			<a href="../index.html" class="logo"><img src="../images/logo.png" height="100px"/></a>
+
+			<div id="menu-bar" class="fas fa-bars"></div>
+
+			<nav class="navbar">
+				<a id="#homepage" href="../index.html">Homepage</a>
+				<a id="rand" onmouseover="rand()" href="">Random Recipe</a>
+				<a href="recipes.html">Recipes</a>
+				<a href="../MyKitchen/mykitchen.html">My Kitchen</a>
+				<a href="../contactus/contactus.html">Contact us</a>
+			</nav>
+		</header>
+<div class="scrolldown">
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../images/top.png" /></button>
+
+		<section class="speciality" id="speciality">
+		
+		<h1 class="heading"><span>Frittata Tray Bake</span> </h1>
+		<button class="heading2"><a href="#ingred"><span>Ingredients</span></a> </button>
+		<button class="heading2"><a href="#method"><span>Method</span> </a></button>
+		<button class="heading2" ><a href="#fact"><span> Facts</span> </a></button>
+		<br>
+				<div class="box1">
+				<img class="image" src="../images/6.jpg"  alt="">
+			</div>
+			<div class="box-container">
+				<div class="box">
+					<div class="content" id="ingred"><h3>Ingredients</h3>
+						<div>
+  
+  <div class="Recipe-IngredientList">
+  <div id="port">
+  <label for="serving">Portions :</label>
+  <input type="number" id="servingInput" placeholder="Enter portion">
+  <button class="js-decreaseService">-</button>
+  <button class="js-increaseService">+</button>
+  <div id="search">
+  <button >Calculate</button>
+  </div>
+  </div>
+
+    </br>
+    <div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="1">Olive Oil: <span> </span>tbsp</div>
+    <div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="200">Swiss Brown Mushrooms (quartered): <span> </span>g</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="150">Mixed Mushroom: <span> </span>g</div>
+    <div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">Garlic Cloves (crushed): <span> </span></div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="8">Eggs: <span> </span></div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="185">Milk: <span> </span>ml</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="60">Finely Grated Parmesan: <span> </span>g</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="2">130g Truss Tomatoes: <span> </span>packets</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="280">Artichoke Hearts: <span></span>g</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="100">Prosciutto Slices: <span></span>g</div>
+	<div class="Recipe-Ingredient js-recipeIngredient" data-baseValue="0.25">Fresh Basil Leaves: <span>/cup(s)</span>g</div>
+	
+	<br>
+	<div class="Recipe-Ingredient js-recipeIngredient" id="Sum" data-baseValue="288">Total Calories: <span></span></div>
+  </div>
+</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="content" id="method"><h3>Method</h3>
+						<ul>
+							<li>Preheat oven to 200C/180C fan forced. Grease a 5cm-deep, 20 x 26cm baking dish. Line a baking tray with foil.</li>
+							<li>Heat oil in a large frying pan over medium- high heat. Cook the mushroom, stirring, for 5 minutes or until browned and tender. Add the garlic. Cook, stirring, for 1 minute.</li>
+							<li>Meanwhile, whisk together eggs and milk in a large jug. Stir in half the parmesan. Season with pepper. Pour over the base of the prepared dish. Arrange tomatoes, artichoke, and mushroom on top. Bake for 25 minutes or until golden and just set. When frittata has 10 minutes left of cooking, place prosciutto in a single layer on prepared tray. Bake for 10 minutes or until golden and crisp. Break into shards. </li>
+							<li>Place rocket and remaining parmesan in a bowl and toss. Sprinkle the frittata with basil and prosciutto shards, and serve with the rocket parmesan salad.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<div class="content" id="fact">
+					<h3>Nutritional Information</h3><br>
+					<p id="serve">Per Serving</p>
+					<div class ="box-container">
+					<div class="box">
+					<p>CALORIES<br> 288kJ</p>
+					</div>
+					<div class="box" id="energy">
+					<p>ENERGY <br> 1625kJ</p>
+					</div>
+					<div class="box">
+					<p>FAT<br> 25.6g</p>
+					</div>
+					<div class="box">
+					<p>SATURATES<br> 8.6g</p>
+					</div>
+					<div class="box">
+					<p>FIBRE<br> 6.5g</p>
+					</div>
+					<div class="box">
+					<p>PROTEIN<br> 31.7g</p>
+					</div>
+					<div class="box">
+					<p>CARBS<br> 5.4g</p>
+					</div>
+				</div>		
+				</div>
+
+
+			</div>
+		</section>
+
+<script>
+var computeServing = function(serving) {
+  $('.js-recipeIngredient').each(function(index, item) {
+    $(item).children('span').html($(item)[0].dataset.basevalue * serving)
+  })
+}
+$('#servingInput').on('change', function() {
+  computeServing($(this).val())
+})
+$('.js-decreaseService').on('click', function() {
+  var currentServing = $('#servingInput').val()
+  $('#servingInput').val(currentServing - 1)
+  computeServing(currentServing - 1)
+})
+$('.js-increaseService').on('click', function() {
+  var currentServing = $('#servingInput').val()
+  $('#servingInput').val(parseInt(currentServing) + 1)
+  computeServing(parseInt(currentServing) + 1)
+})
+computeServing(5)
+</script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	</body>
+	<script src="java.js"></script>
+
+</html>
